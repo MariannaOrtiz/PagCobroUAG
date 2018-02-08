@@ -1,90 +1,104 @@
-import React, { Component, Fragment } from 'react';
-import logo from './logo.png';
-import './App.css';
+import React, { Component, Fragment } from "react";
+import logo from "./logo.png";
+import oxxopay from "./oxxopay.svg";
+import paypal from "./paypal.svg";
+import methods_statement_cards from "./methods_statement_cards.png";
+import "./App.css";
 
 class App extends Component {
   render() {
     const styles = {
       itemContainer: {
-        display: 'flex',
-        height: '50rem',
-        paddingTop: '5rem',
-        paddingLeft: '15rem',
-        paddingRight: '10rem'
+        display: "flex",
+        height: "50rem",
+        paddingTop: "5rem",
+        paddingLeft: "15rem",
+        paddingRight: "10rem"
       },
       navContainer: {
-        position: 'fixed',
-        padding: '1rem',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        height: '4rem',
-        width: '100%',
-        backgroundColor: 'white',
-        borderBottom: '1px solid rgba(0,0,0,.1)'
+        position: "fixed",
+        padding: "1rem",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        height: "4rem",
+        width: "100%",
+        backgroundColor: "white",
+        borderBottom: "1px solid rgba(0,0,0,.1)"
       },
       navLogo: {
-        height: '80%'
+        height: "80%"
       },
       navLinksContainer: {
-        display: 'flex',
-        paddingRight: '4rem'
+        display: "flex",
+        paddingRight: "4rem"
       },
       navLink: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontWeight: '300',
-        fontSize: '1.1rem',
-        wordWrap: 'break-word',
-        textDecoration: 'none',
-        color: 'inherit',
-        marginRight: '1rem'
+        fontWeight: "300",
+        fontSize: "1.1rem",
+        wordWrap: "break-word",
+        textDecoration: "none",
+        color: "inherit",
+        marginRight: "1rem"
       },
       imageContainer: {
-        display: 'flex',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        height: '100%',
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "center",
+        height: "100%",
         flexGrow: 3
       },
       itemImage: {
-        height: '80%',
-        width: 'auto'
+        height: "80%",
+        width: "auto"
       },
       detailsContainer: {
-        paddingLeft: '6rem',
-        paddingTop: '4rem',
-        overflow: 'auto',
+        paddingLeft: "6rem",
+        paddingTop: "4rem",
+        overflow: "auto",
         flexGrow: 7
       },
       title: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontWeight: '300',
-        fontSize: '2rem',
-        wordWrap: 'break-word'
+        fontWeight: "300",
+        fontSize: "2rem",
+        wordWrap: "break-word"
       },
       subtitle: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontWeight: '400',
-        fontSize: '1.1rem',
-        wordWrap: 'break-word'
+        fontWeight: "400",
+        fontSize: "1.1rem",
+        wordWrap: "break-word"
       },
       details: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontWeight: '300',
-        fontSize: '1.1rem',
-        wordWrap: 'break-word'
+        fontWeight: "300",
+        fontSize: "1.1rem",
+        wordWrap: "break-word"
       },
       price: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontSize: '1.2rem',
-        fontWeight: '400',
-        wordWrap: 'break-word'
+        fontSize: "1.2rem",
+        fontWeight: "400",
+        wordWrap: "break-word"
       },
       shipping: {
         fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-        fontSize: '1.3rem',
-        fontWeight: '500',
-        wordWrap: 'break-word'
+        fontSize: "1.3rem",
+        fontWeight: "500",
+        wordWrap: "break-word"
+      },
+      imagenescontainer: {
+        display: "flex",
+        justifyContent: "flex-start",
+        flexDirection: "column",
+
+        alignItems: "flex-start"
+      },
+      imagen: {
+        height: "35px",
+        marginTop: "20px"
       }
     };
     return (
@@ -128,6 +142,15 @@ class App extends Component {
               and $2.00 for each additional apparel item. Products are fulfilled
               in the US
             </p>
+            <div style={styles.imagenescontainer}>
+              <img
+                style={styles.imagen}
+                src={methods_statement_cards}
+                alt="calithecat"
+              />
+              <img style={styles.imagen} src={oxxopay} alt="calithecat" />
+              <img style={styles.imagen} src={paypal} alt="calithecat" />
+            </div>
           </div>
         </div>
       </Fragment>
